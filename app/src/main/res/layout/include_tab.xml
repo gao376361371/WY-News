@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_weight="1">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/viewpagertab"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:stl_defaultTabTextColor="@color/tab_text_color"
+            app:stl_defaultTabTextHorizontalPadding="18dp"
+            app:stl_defaultTabTextSize="16sp"
+            app:stl_dividerThickness="0dp"
+            app:stl_indicatorColor="@color/colorMain"
+            app:stl_indicatorInterpolation="linear"
+            app:stl_indicatorThickness="2dp"
+            app:stl_underlineThickness="0dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_change_tip"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorLightGray"
+            android:gravity="center_vertical"
+            android:text="切换栏目"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp">
+
+        <ImageButton
+            android:id="@+id/ibtn_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_btn_arrow"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/icon_news_column_add_down"/>
+
+        <TextView
+            android:id="@+id/tv_change_done"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@color/colorLightGray"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="完成"
+            android:textColor="@color/colorMain"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.m520it.newreader09.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_ad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_launcher"
+            android:scaleType="fitXY"/>
+
+        <widget.SkipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/skipView"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biz_ad_slogan"/>
+
+</LinearLayout>
